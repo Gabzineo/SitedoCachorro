@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doguinho</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Faça carinho na barriga do Cachorro</h1>
+    <p>ele fara um som agradavel</p>
+  <img src="dog-maraca.gif" alt="">
+
+  <audio id="bg-music" loop>
+    <source src="Undertale - Dogsong (Acoustic Cover) - The Team Players (youtube).mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    // Espera qualquer clique na página para tocar a música
+    window.addEventListener('click', function () {
+      const audio = document.getElementById('bg-music');
+      audio.play();
+    }, { once: true }); // dispara só uma vez
+  </script>
+</body>
+</html>
